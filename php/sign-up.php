@@ -124,6 +124,12 @@
             box-shadow: 2px 0px 9px 2px rgba(0, 0, 0, 0.75);
         }
 
+        .card-form input {
+            margin-left: 27px;
+            margin-right: 27px;
+            width: 250px
+        }
+
         .card-img {
             background-color: white;
             padding: 0;
@@ -131,7 +137,7 @@
 
         span {
             text-align: center;
-            margin-top: 60px;
+            margin-top: 20px;
         }
 
         .btn button {

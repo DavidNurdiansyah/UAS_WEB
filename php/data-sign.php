@@ -8,7 +8,7 @@ $password = $_POST['password'];
 $query_sql = "INSERT INTO signup VALUE (NULL,'$username','$email','$password')";
 
 if (mysqli_query($conn, $query_sql)) {
-    header("location:bracket.php");
+    header("location:input.php");
 } else {
     echo "Pendaftaran gagal : " . mysqli_error($conn);
 }

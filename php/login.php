@@ -101,10 +101,6 @@
             background-attachment: fixed;
         }
 
-        span {
-            color: #E45862;
-        }
-
         .card {
             display: flex;
             flex-wrap: wrap;
@@ -127,15 +123,17 @@
 
         .card-form input {
             margin-left: 27px;
+            margin-right: 27px;
+            width: 250px
         }
 
         span {
             text-align: center;
-            margin-top: 100px;
+            margin-top: 20px;
         }
 
         button {
-            margin-left: 10px;
+            margin-left: 30px;
         }
     }
     </style>
