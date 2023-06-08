@@ -60,6 +60,11 @@
             /* height: 100%; */
             /* width: 100%; */
             overflow: auto;
+            background-position: center;
+            background-size: cover;
+            background: url(/gambar/mobile.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
 
         .container-text {

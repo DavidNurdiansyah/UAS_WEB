@@ -44,7 +44,12 @@
         display: flex;
         justify-content: space-evenly;
         margin-top: 30px;
-        width: 100%;
+        width: 90%;
+        border-radius: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding-bottom: 4px;
+
     }
 
     .container-1 input {
@@ -108,45 +113,105 @@
     @media screen and (max-width:700px) {
         body {
             width: 100%;
-            overflow: scroll;
+            margin: 0;
+            background-position: center;
+            background-size: cover;
+            background: url(/gambar/mobile.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
+
+        span {
+            color: #324073;
+        }
+
+        .container {
+            overflow: auto;
+            width: 100%;
+            margin: 0;
+            display: block;
+        }
+
+        .container-1 {
+            width: 100px;
+            margin: 0;
+            padding: 4px;
+        }
+
+        .container-2 {
+            width: 100px;
+            margin-left: 100px;
+            margin-bottom: 70px;
+        }
+
+        .container-3 {
+            width: 100px;
+            margin-left: 0;
+        }
+
+        .container-1 input {
+            width: 100px;
+            height: 30px;
+            border-radius: 5px;
+        }
+
+        .container-2 input {
+            width: 100px;
+            height: 30px;
+            border-radius: 5px;
+            margin-left: 60px;
+
+        }
+
+        .container-2 button {
+            width: 70px;
+            padding: 5px;
+            margin-left: 0;
+
+        }
+
+        .container-3 input {
+            width: 100px;
+            margin-left: 17px;
+            height: 30px;
+            border-radius: 5px;
+        }
+
     }
     </style>
 </head>
 
 <body>
     <span>MASUKKAN NAMA TIM ANDA</span>
-    <div class="container">
-        <form action="/php/data-tim.php" method="post">
-            <div class="container">
-                <div class="container-1">
-                    <div class="txt"><input type="text" name="tim1" id="" placeholder="tim 1"
-                            style="background-color:#FC8991">
-                    </div>
-                    <div class="txt"><input type="text" name="tim2" id="" class="inpt" placeholder="tim 2"></div>
-                    <div class="txt"><input type="text" name="tim3" id="" placeholder="tim 3"
-                            style="background-color:#FC8991">
-                    </div>
-                    <div class="txt"><input type="text" name="tim4" id="" class="inpt" placeholder="tim 4"></div>
+    <form action="/php/data-tim.php" method="post">
+        <div class="container">
+            <div class="container-1">
+                <div class="txt"><input type="text" name="tim1" id="" placeholder="tim 1"
+                        style="background-color:#FC8991">
                 </div>
-                <div class="container-2">
-                    <div class="txt"><input type="text" placeholder="FINALIS 1" name="finalis1"></div>
-                    <div class="txt"><input type="text" placeholder="FINALIS 2" style="background-color:#FC8991"
-                            name="finalis2"></div>
-                    <button type="submit" style="margin-left: 80px;">INPUT</button>
+                <div class="txt"><input type="text" name="tim2" id="" class="inpt" placeholder="tim 2"></div>
+                <div class="txt"><input type="text" name="tim3" id="" placeholder="tim 3"
+                        style="background-color:#FC8991">
                 </div>
-                <div class="container-3">
-                    <div class="txt"><input type="text" name="tim5" id="" placeholder="tim 5"
-                            style="background-color:#FC8991">
-                    </div>
-                    <div class="txt"><input type="text" name="tim6" id="" class="inpt" placeholder="tim 6"></div>
-                    <div class="txt"><input type="text" name="tim7" id="" placeholder="tim 7"
-                            style="background-color:#FC8991">
-                    </div>
-                    <div class="txt"><input type="text" name="tim8" id="" class="inpt" placeholder="tim 8"></div>
+                <div class="txt"><input type="text" name="tim4" id="" class="inpt" placeholder="tim 4"></div>
+            </div>
+            <div class="container-2">
+                <div class="txt"><input type="text" placeholder="FINALIS 1" name="finalis1"></div>
+                <div class="txt"><input type="text" placeholder="FINALIS 2" style="background-color:#FC8991"
+                        name="finalis2"></div>
+                <button type="submit" style="margin-left: 80px;">INPUT</button>
+            </div>
+            <div class="container-3">
+                <div class="txt"><input type="text" name="tim5" id="" placeholder="tim 5"
+                        style="background-color:#FC8991">
                 </div>
-        </form>
-    </div>
+                <div class="txt"><input type="text" name="tim6" id="" class="inpt" placeholder="tim 6"></div>
+                <div class="txt"><input type="text" name="tim7" id="" placeholder="tim 7"
+                        style="background-color:#FC8991">
+                </div>
+                <div class="txt"><input type="text" name="tim8" id="" class="inpt" placeholder="tim 8"></div>
+            </div>
+    </form>
 </body>
 
 </html>

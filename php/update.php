@@ -5,11 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>LOGIN</title>
-</head>
-
-<body>
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&family=Poppins:wght@500&display=swap');
 
@@ -101,10 +98,6 @@
             background-attachment: fixed;
         }
 
-        span {
-            color: #E45862;
-        }
-
         .card {
             display: flex;
             flex-wrap: wrap;
@@ -125,48 +118,35 @@
             padding: 0;
         }
 
-        .card-form input {
-            margin-left: 27px;
-        }
-
         span {
             text-align: center;
-            margin-top: 100px;
+            margin-top: 60px;
         }
 
-        button {
-            margin-left: 10px;
-        }
+
     }
     </style>
-    </head>
+</head>
 
-    <body>
-        <span>LOGIN</span>
-        <div class="card">
-            <div class="card-img">
-                <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_yLCHY6q3aU.json"
-                    background="transparent" speed="1" style="width: 350px; height: 300px;" loop autoplay>
-                </lottie-player>
-            </div>
-            <form action="/php/data-login.php" method="post">
-                <div class="card-form">
-                    <input type="email" name="email" required placeholder="email@gmail.com"><br><br>
-                    <input type="password" name="password" required placeholder="password" minlength="6"><br><br>
-                    <div class="btn">
-
-                        <button type="submit" name="submit">LOGIN</button>
-                        <button type="submit" name="edit"
-                            style="margin-left: 47px;width:150px;padding:4px;text-decoration:none"><a
-                                href="/php/update.php">NEW
-                                PASSWORD</a></button>
-                    </div>
-                </div>
-
-            </form>
-
+<body>
+    <span>SIGN UP</span>
+    <div class="card">
+        <div class="card-img">
+            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_ky03n5aXvs.json" background="transparent"
+                speed="1" style="width: 350px; height: 300px;" loop autoplay></lottie-player>
         </div>
-        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    </body>
+        <form action="/php/update-data.php" method="post">
+            <div class="card-form">
+                <input type="email" name="email" required placeholder="email@gmail.com"><br><br>
+                <input type="password" name="password" required placeholder="new password" minlength="6"><br><br>
+                <div class="btn">
+                    <button type="submit" name="submit" style="padding: 10px;">UPDATE</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
 
 </html>
